@@ -424,6 +424,7 @@ jQuery.getJSON(url, {})
 
                         var editedData = { id: currentLineItem.id, quantity: parseInt(e.target.value) };
                         constructOrderJson(data, orders[index], editedData, "existingLineItems");
+                        console.log("Edited Data", editedData);
                     });
                 });
 
