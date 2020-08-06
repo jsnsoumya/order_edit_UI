@@ -1,5 +1,5 @@
 const body = $('body');
-const cors = require('cors');
+
 const shop = Shopify.shop;
 
 
