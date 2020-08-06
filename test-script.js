@@ -3,7 +3,7 @@ const cors = require('cors');
 const shop = Shopify.shop;
 
 
-app.use(cors());
+app.use(cors())
 
 var url = `https://${shop}/admin/api/2020-04/customers/${__st.cid}/orders.json`;
 
