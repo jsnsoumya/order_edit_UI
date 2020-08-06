@@ -1,7 +1,11 @@
 //const body = $('body');
 const shop = Shopify.shop;
+const cors = require('cors');
 
+
+app.use(cors());
 var url = `https://${shop}/admin/api/2020-04/customers/${__st.cid}/orders.json`;
+
 
 jQuery.getJSON(url, {})
   .done(function(response) {
